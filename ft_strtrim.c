@@ -6,7 +6,7 @@
 /*   By: maratana <maratana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/05 22:01:07 by maratana          #+#    #+#             */
-/*   Updated: 2026/10/19 16:37:39 by maratana         ###   ########.fr       */
+/*   Updated: 2026/10/20 14:03:38 by maratana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,8 +30,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	start;
 	size_t	end;
-	char *ret;
-	int i;
+	char	*ret;
+	int		i;
 
 	start = 0;
 	while (s1[start] && (isset(s1[start], set)))
@@ -39,19 +39,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = start;
 	while (s1[end])
 		end++;
-	while (end > start && isset(s1[end-1], set))
+	while (end > start && isset(s1[end - 1], set))
 		end--;
 	ret = malloc(end - start + 1);
 	if (!ret)
-		return NULL;
-	i=0;
-	while(start<end)
+		return (NULL);
+	i = 0;
+	while (start < end)
 	{
-		ret[i]=s1[start];
+		ret[i] = s1[start];
 		i++;
 		start++;
 	}
-	ret[i]='\0';
+	ret[i] = '\0';
 	return (ret);
 }
 

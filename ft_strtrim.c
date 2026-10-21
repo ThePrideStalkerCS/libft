@@ -6,7 +6,7 @@
 /*   By: maratana <maratana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/05 22:01:07 by maratana          #+#    #+#             */
-/*   Updated: 2026/10/20 14:03:38 by maratana         ###   ########.fr       */
+/*   Updated: 2026/10/21 11:27:20 by maratana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,48 +54,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ret[i] = '\0';
 	return (ret);
 }
-
-// static size_t	calc_trimmed(char const *s1, char const *set)
-// {
-// 	size_t	l;
-// 	int		i;
-
-// 	i = 0;
-// 	l = 0;
-// 	while (s1[i])
-// 	{
-// 		if (!isset(s1[i], set))
-// 		{
-// 			l++;
-// 		}
-// 		s1++;
-// 	}
-// 	return (l);
-// }
-
-// char	*ft_strtrim(char const *s1, char const *set)
-// {
-// 	size_t	trimedl;
-// 	char	*ret;
-// 	int		i;
-// 	int		j;
-
-// 	j = 0;
-// 	i = 0;
-// 	trimedl = calc_trimmed(s1, set);
-// 	ret = malloc(trimedl + 1);
-// 	while (s1[i])
-// 	{
-// 		if (!isset(s1[i], set))
-// 		{
-// 			ret[j] = s1[i];
-// 			j++;
-// 		}
-// 		i++;
-// 	}
-// 	ret[j] = '\0';
-// 	return (ret);
-// }
 
 // int	main(void)
 // {

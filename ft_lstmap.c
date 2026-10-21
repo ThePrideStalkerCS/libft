@@ -6,7 +6,7 @@
 /*   By: maratana <maratana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 14:13:02 by maratana          #+#    #+#             */
-/*   Updated: 2026/10/19 16:13:26 by maratana         ###   ########.fr       */
+/*   Updated: 2026/10/21 13:54:03 by maratana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*ret;
 	t_list	*temp;
 
-	if (lst == NULL)
+	if (!lst || !f)
 		return (NULL);
 	ret = ft_lstnew(f(lst->content));
 	lst = lst->next;

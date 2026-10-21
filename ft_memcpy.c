@@ -6,7 +6,7 @@
 /*   By: maratana <maratana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/02 15:17:19 by maratana          #+#    #+#             */
-/*   Updated: 2026/10/06 16:19:29 by maratana         ###   ########.fr       */
+/*   Updated: 2026/10/21 11:21:22 by maratana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	unsigned char		*d;
 	const unsigned char	*s;
 
-	d = (unsigned char *)dest;
+	d = dest;
 	s = src;
 	while (n > 0)
 	{
